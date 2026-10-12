@@ -1,161 +1,21 @@
 <!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#101610">
-    <title>APEXthenics</title>
-    
-    <style>
-        :root {
-            --bg: #0c100d;
-            --p: #151c16;
-            --p2: #1b251c;
-            --line: #2c3b2d;
-            --gold: #d8b45b;
-            --green: #8abf79;
-            --text: #f0f2ec;
-            --muted: #a3aea1;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            background: var(--bg);
-            color: var(--text);
-            font-family: system-ui, Arial;
-            padding-bottom: 80px;
-        }
-
-        .top {
-            padding: 22px 18px;
-            background: linear-gradient(135deg, #172219, #0d110e);
-            border-bottom: 1px solid var(--line);
-        }
-
-        .eyebrow {
-            font-size: 11px;
-            letter-spacing: 3px;
-            color: var(--gold);
-            font-weight: 800;
-        }
-
-        .brand {
-            font-size: 27px;
-            font-weight: 900;
-            margin: 5px 0;
-        }
-
-        .brand span {
-            color: var(--gold);
-        }
-
-        .sub, .muted {
-            color: var(--muted);
-        }
-
-        .sub {
-            font-size: 12px;
-            letter-spacing: 1px;
-        }
-
-        .rankrow {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 18px;
-            gap: 10px;
-        }
-
-        .rankbadge {
-            border: 1px solid #756332;
-            border-radius: 8px;
-            padding: 8px;
-            color: var(--gold);
-            font-size: 12px;
-            font-weight: 800;
-        }
-
-        .tiny, .xp {
-            font-size: 12px;
-            color: var(--muted);
-        }
-
-        .bar {
-            height: 6px;
-            background: #293229;
-            border-radius: 9px;
-            margin-top: 10px;
-            overflow: hidden;
-        }
-
-        .bar span {
-            display: block;
-            height: 100%;
-            background: var(--gold);
-            width: 0;
-        }
-
-        .wrap {
-            max-width: 720px;
-            margin: auto;
-            padding: 16px;
-        }
-
-        .page {
-            display: none;
-        }
-
-        .page.active {
-            display: block;
-        }
-
-        .sectionhead {
-            display: flex;
-            justify-content: space-between;
-            align-items: end;
-            margin: 8px 0 14px;
-        }
-
-        .sectionhead h2 {
-            margin: 0;
-            font-size: 22px;
-        }
-
-        .card {
-            background: var(--p);
-            border: 1px solid var(--line);
-            border-radius: 13px;
-            padding: 16px;
-            margin-bottom: 13px;
-        }
-
-        .card h3 {
-            margin: 0 0 8px;
-            font-size: 16px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 10px;
-        }
-
-        .stat {
-            background: var(--p2);
-            padding: 14px;
-            border-radius: 10px;
-            border: 1px solid var(--line);
-        }
-
-        .stat strong {
-            display: block;
-            font-size: 25px;
-            color: var(--gold);
-        }
-
-        .stat span {
-            font-size: 1
-      
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101610"><title>APEXthenics</title>
+<style>
+:root{--bg:#0c100d;--p:#151c16;--p2:#1b251c;--line:#2c3b2d;--gold:#d8b45b;--green:#8abf79;--text:#f0f2ec;--muted:#a3aea1}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Arial;padding-bottom:80px}.top{padding:22px 18px;background:linear-gradient(135deg,#172219,#0d110e);border-bottom:1px solid var(--line)}.eyebrow{font-size:11px;letter-spacing:3px;color:var(--gold);font-weight:800}.brand{font-size:27px;font-weight:900;margin:5px 0}.brand span{color:var(--gold)}.sub,.muted{color:var(--muted)}.sub{font-size:12px;letter-spacing:1px}.rankrow{display:flex;justify-content:space-between;margin-top:18px;gap:10px}.rankbadge{border:1px solid #756332;border-radius:8px;padding:8px;color:var(--gold);font-size:12px;font-weight:800}.tiny,.xp{font-size:12px;color:var(--muted)}.bar{height:6px;background:#293229;border-radius:9px;margin-top:10px;overflow:hidden}.bar span{display:block;height:100%;background:var(--gold);width:0}.wrap{max-width:720px;margin:auto;padding:16px}.page{display:none}.page.active{display:block}.sectionhead{display:flex;justify-content:space-between;align-items:end;margin:8px 0 14px}.sectionhead h2{margin:0;font-size:22px}.card{background:var(--p);border:1px solid var(--line);border-radius:13px;padding:16px;margin-bottom:13px}.card h3{margin:0 0 8px;font-size:16px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.stat{background:var(--p2);padding:14px;border-radius:10px;border:1px solid var(--line)}.stat strong{display:block;font-size:25px;color:var(--gold)}.stat span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}.btn{border:1px solid var(--gold);background:var(--gold);color:#161910;font-weight:800;border-radius:9px;padding:11px 14px;width:100%;margin-top:8px}.btn.secondary,.btn.ghost{background:transparent;color:var(--gold)}.btn.ghost{border-color:var(--line);color:var(--text)}.field{display:block;margin:12px 0}.field label{display:block;font-size:12px;color:var(--muted);margin-bottom:6px}.field input,.field select{width:100%;background:#0d130e;border:1px solid var(--line);border-radius:8px;color:var(--text);padding:11px}.exercise{padding:12px 0;border-bottom:1px solid var(--line)}.exercise:last-child{border:0}.exercise strong{display:block}.tag,.pill{display:inline-block;font-size:11px;border:1px solid var(--line);color:var(--green);border-radius:20px;padding:4px 8px;margin-top:5px}.notice{border-left:3px solid var(--gold);padding:10px 12px;background:#211e13;color:#d9d0b6;font-size:12px}.nav{position:fixed;bottom:0;left:0;right:0;display:grid;grid-template-columns:repeat(5,1fr);background:#101611;border-top:1px solid var(--line);padding:7px 4px calc(7px + env(safe-area-inset-bottom))}.nav button{background:none;border:0;color:var(--muted);font-size:10px;padding:5px 0}.nav b{display:block;font-size:19px}.nav button.active{color:var(--gold)}.pillrow{display:flex;flex-wrap:wrap;gap:7px}
+</style></head><body>
+<header class="top"><div class="eyebrow">PERSONAL PERFORMANCE SYSTEM</div><div class="brand">APEX<span>THENICS</span></div><div class="sub">BUILD STRENGTH. EARN YOUR RANK.</div><div class="rankrow"><div><div class="rankbadge" id="rank">RECRUIT</div><div class="xp" id="xpText">0 XP earned</div></div><div style="text-align:right"><div class="xp" id="nextRank">100 XP to Private</div><div class="xp">RANK PROGRESS</div></div></div><div class="bar"><span id="xpBar"></span></div></header>
+<main class="wrap">
+<section class="page active" id="command"><div class="sectionhead"><h2>Command</h2><small id="today" class="muted"></small></div><div class="card"><div class="eyebrow">TODAY'S MISSION</div><h3 id="missionTitle" style="font-size:20px;margin-top:8px">Establish your baseline</h3><p class="muted" id="missionText">Complete the assessment to choose your starting level.</p><button class="btn" onclick="go('assess')">BEGIN ASSESSMENT →</button></div><div class="grid"><div class="stat"><strong id="sessions">0</strong><span>Sessions logged</span></div><div class="stat"><strong id="days">0</strong><span>Training days</span></div><div class="stat"><strong id="xpStat">0</strong><span>Total XP</span></div><div class="stat"><strong id="rankStat">Recruit</strong><span>Current rank</span></div></div><div class="card" style="margin-top:13px"><h3>Field orders</h3><div class="notice">Quality before quantity. Stop if you feel sharp pain or dizziness. Rest 60–120 seconds between sets.</div><button class="btn secondary" onclick="go('train')">VIEW TRAINING PLAN</button></div><div class="card"><h3>Latest activity</h3><div id="latest" class="muted tiny">No sessions logged yet.</div></div></section>
+<section class="page" id="assess"><div class="sectionhead"><h2>Assessment</h2><small class="muted">Establish your baseline</small></div><div class="card"><p class="muted tiny">Enter your comfortable maximum with clean form. If you cannot do a movement safely, enter 0.</p><div class="field"><label>Age</label><input id="age" type="number" min="13" placeholder="Your age"></div><div class="field"><label>Training experience</label><select id="experience"><option value="beginner">Beginner / starting out</option><option value="some">Some experience</option><option value="experienced">Experienced</option></select></div><div class="field"><label>Goal</label><select id="goal"><option>Build strength</option><option>Build muscle</option><option>Learn calisthenics skills</option><option>Improve endurance</option></select></div><div class="field"><label>Push-ups (clean reps)</label><input id="push" type="number" min="0" value="5"></div><div class="field"><label>Bodyweight squats (reps)</label><input id="squat" type="number" min="0" value="10"></div><div class="field"><label>Plank hold (seconds)</label><input id="plank" type="number" min="0" value="20"></div><div class="field"><label>Strict pull-ups (0 if none)</label><input id="pull" type="number" min="0" value="0"></div><button class="btn" onclick="saveAssessment()">SAVE ASSESSMENT</button></div><div class="card"><h3>Progression rule</h3><p class="muted tiny">When all sets are clean and you have 1–2 reps left in reserve, add a few reps or choose a harder variation. Planche, front lever, human flag and handstand push-ups need prerequisites.</p></div></section>
+<section class="page" id="train"><div class="sectionhead"><h2>Train</h2><small class="muted" id="planLevel">Foundation track</small></div><div class="card"><div class="eyebrow">FULL BODY · SESSION A</div><h3 id="planTitle" style="font-size:20px;margin-top:7px">Foundation mission</h3><p class="muted tiny">Use controlled reps and rest 60–120 seconds between sets.</p><div id="planList"></div><button class="btn" onclick="completeWorkout()">COMPLETE SESSION · EARN XP</button><button class="btn ghost" onclick="go('library')">OPEN EXERCISE LIBRARY</button></div><div class="card"><h3>Weekly structure</h3><div class="pillrow"><span class="pill">Day 1 · Train</span><span class="pill">Day 2 · Recover</span><span class="pill">Day 3 · Train</span><span class="pill">Day 4 · Recover</span><span class="pill">Day 5 · Optional</span></div><p class="muted tiny">Start with 2–3 non-consecutive strength days each week.</p></div></section>
+<section class="page" id="library"><div class="sectionhead"><h2>Library</h2><small class="muted">Movements & progressions</small></div><div class="card"><h3>Push</h3><div class="exercise"><strong>Wall / incline push-up</strong><span class="muted tiny">3 × 6–12 · Keep your body straight.</span><br><span class="tag">FOUNDATION</span></div><div class="exercise"><strong>Standard push-up</strong><span class="muted tiny">3 × 5–12 · Lower with control.</span><br><span class="tag">NEXT STEP</span></div><div class="exercise"><strong>Pike push-up</strong><span class="muted tiny">3 × 4–8 · Shoulder strength.</span><br><span class="tag">SKILL PREP</span></div></div><div class="card"><h3>Pull</h3><div class="exercise"><strong>Active hang / scapular pulls</strong><span class="muted tiny">3 × 5–10 or 10–20 sec, only from a secure bar.</span></div><div class="exercise"><strong>Assisted pull-up / row</strong><span class="muted tiny">3 × 5–10 with a safe setup.</span></div><div class="exercise"><strong>Strict pull-up</strong><span class="muted tiny">3 × 3–8, no swinging.</span></div></div><div class="card"><h3>Legs & core</h3><div class="exercise"><strong>Bodyweight squat</strong><span class="muted tiny">3 × 8–15 reps.</span></div><div class="exercise"><strong>Reverse lunge</strong><span class="muted tiny">3 × 6–10 each side.</span></div><div class="exercise"><strong>Glute bridge</strong><span class="muted tiny">3 × 10–15 reps.</span></div><div class="exercise"><strong>Plank</strong><span class="muted tiny">3 × 15–40 sec; stop when form breaks.</span></div></div><div class="card"><h3>Future skill track</h3><p class="muted tiny">Handstand push-up · Muscle-up · Front lever · Planche · Human flag. Build foundational pushing, pulling and core control first.</p></div></section>
+<section class="page" id="profile"><div class="sectionhead"><h2>Profile</h2><small class="muted">Operator record</small></div><div class="card"><div class="field"><label>Call sign / display name</label><input id="name" maxlength="32" placeholder="Your name"></div><div class="field"><label>Height (cm)</label><input id="height" type="number" placeholder="e.g. 178"></div><div class="field"><label>Weight (kg)</label><input id="weight" type="number" step=".1" placeholder="e.g. 72"></div><button class="btn" onclick="saveProfile()">SAVE PROFILE</button></div><div class="card"><h3>Training record</h3><div id="history" class="muted tiny">No sessions yet.</div><button class="btn secondary" onclick="exportData()">EXPORT BACKUP</button><label class="btn ghost" style="display:block;text-align:center">IMPORT BACKUP<input type="file" accept="application/json" onchange="importData(event)" hidden></label><p class="muted tiny">Your records stay in this browser on this device. Export a backup before clearing browser data or changing phones.</p></div><div class="card"><h3>Reset data</h3><button class="btn ghost" onclick="resetData()">RESET ALL DATA</button></div></section>
+</main><nav class="nav"><button class="active" data-page="command" onclick="go('command')"><b>⌂</b>COMMAND</button><button data-page="assess" onclick="go('assess')"><b>◎</b>ASSESS</button><button data-page="train" onclick="go('train')"><b>⚔</b>TRAIN</button><button data-page="library" onclick="go('library')"><b>▤</b>LIBRARY</button><button data-page="profile" onclick="go('profile')"><b>♙</b>PROFILE</button></nav>
+<script>
+const KEY='apexthenics_v1',ranks=[['Recruit',0],['Private',100],['Corporal',250],['Sergeant',500],['Lieutenant',850],['Captain',1300],['Major',1900],['Colonel',2700],['General',3800]];let data={xp:0,assessment:null,profile:{},sessions:[]};function load(){try{let d=JSON.parse(localStorage.getItem(KEY)||'null');if(d)data={...data,...d,profile:d.profile||{},sessions:d.sessions||[]}}catch(e){}}function save(){localStorage.setItem(KEY,JSON.stringify(data));render()}function go(id){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));scrollTo(0,0)}function rankNow(){let r=ranks[0];ranks.forEach(x=>{if(data.xp>=x[1])r=x});return r}
+function render(){let r=rankNow(),i=ranks.findIndex(x=>x[0]===r[0]),n=ranks[i+1];document.getElementById('rank').textContent=r[0].toUpperCase();document.getElementById('rankStat').textContent=r[0];document.getElementById('xpText').textContent=data.xp+' XP earned';document.getElementById('xpStat').textContent=data.xp;document.getElementById('nextRank').textContent=n?(n[1]-data.xp)+' XP to '+n[0]:'TOP RANK ACHIEVED';document.getElementById('xpBar').style.width=n?Math.min(100,(data.xp-r[1])/(n[1]-r[1])*100)+'%':'100%';document.getElementById('sessions').textContent=data.sessions.length;document.getElementById('days').textContent=new Set(data.sessions.map(s=>s.date)).size;document.getElementById('today').textContent=new Date().toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'});document.getElementById('missionTitle').textContent=data.assessment?'Your next full-body session':'Establish your baseline';document.getElementById('missionText').textContent=data.assessment?'Train with controlled reps, log your session, and recover well.':'Complete the assessment to choose your starting level.';document.getElementById('latest').textContent=data.sessions.length?data.sessions[0].date+' — '+data.sessions[0].title+' (+'+data.sessions[0].xp+' XP)':'No sessions logged yet.';renderPlan();document.getElementById('history').innerHTML=data.sessions.length?data.sessions.map(s=>'<div class="exercise"><strong>'+s.date+' · '+s.title+'</strong><span class="muted tiny"> +'+s.xp+' XP</span></div>').join(''):'No sessions yet.';if(data.profile.name)name.value=data.profile.name;if(data.profile.height)height.value=data.profile.height;if(data.profile.weight)weight.value=data.profile.weight;if(data.assessment)Object.keys(data.assessment).forEach(k=>{if(document.getElementById(k))document.getElementById(k).value=data.assessment[k]})}
+function renderPlan(){let a=data.assessment||{push:5,squat:10,plank:20,pull:0,experience:'beginner'},p=+a.push||0,s=+a.squat||0,pl=+a.plank||0,pu=+a.pull||0;let ex=[[p<5?'Wall or incline push-ups':'Standard or incline push-ups','3 sets × '+(p<5?'5–8':'6–10')+' reps'],[pu<1?'Scapular pulls or safe rows':'Strict pull-ups','3 sets × '+(pu<1?'5–8 controlled reps':'3–6 reps')],[s<8?'Supported squats':'Bodyweight squats','3 sets × '+(s<8?'6–10':'8–12')+' reps'],['Glute bridges','3 sets × 10–15 reps'],[pl<20?'Elevated plank':'Forearm plank','3 sets × '+(pl<20?'10–20':'15–30')+' seconds']];document.getElementById('planLevel').textContent=a.experience==='experienced'?'Experienced track':a.experience==='some'?'Building track':'Foundation track';document.getElementById('planTitle').textContent='Full-body foundation mission';document.getElementById('planList').innerHTML=ex.map(e=>'<div class="exercise"><strong>'+e[0]+'</strong><span class="muted tiny">'+e[1]+'</span></div>').join('')}
+function saveAssessment(){let age=+document.getElementById('age').value;if(age&&age<13){alert('This version is designed for ages 13 and above with age-appropriate supervision.');return}let a={};['age','experience','goal','push','squat','plank','pull'].forEach(k=>a[k]=['experience','goal'].includes(k)?document.getElementById(k).value:+(document.getElementById(k).value||0));data.assessment=a;save();alert('Assessment saved. Your starting plan is updated.');go('train')}
+function completeWorkout(){if(!confirm('Mark this session complete? Confirm only after you have actually done it.'))return;data.sessions.unshift({date:new Date().toISOString().slice(0,10),title:'Full-body Session A',xp:50});data.xp+=50;save();alert('Mission logged: +50 XP. Hydrate and recover.');go('command')}
+function saveProfile(){data.profile={name:document.getElementById('name').value.trim(),height:document.getElementById('height').value,weight:document.getElementById('weight').value};save();alert('Profile saved.')}function exportData(){let b=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='apexthenics-backup.json';a.click();URL.revokeObjectURL(a.href)}function importData(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let d=JSON.parse(r.result);if(typeof d.xp!=='number'||!Array.isArray(d.sessions))throw Error();data={...data,...d};save();alert('Backup imported.')}catch(x){alert('Invalid APEXthenics backup file.')}};r.readAsText(f)}function resetData(){if(confirm('Delete all APEXthenics data saved on this device?')){localStorage.removeItem(KEY);data={xp:0,assessment:null,profile:{},sessions:[]};save()}}load();render();
+</script></body></html>
